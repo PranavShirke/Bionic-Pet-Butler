@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Robot - Products</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <header>
+        <h1>Our Products & Services</h1>
+        <div id="cart-icon">
+            <span id="cart-count">0</span>
+            <img src="./images/cART.jpg" alt="Cart" />
+        </div>
+    </header>
+
+    <div class="products-container">
+        <!-- Product: Pet Robot -->
+        <div class="product-card" data-product="Pet Robot" data-price="999">
+            <img src="./images/pic1.svg.jpg" alt="Pet Robot">
+            <h2>Pet Robot</h2>
+            <p>Next-gen pet robot designed to care for and monitor your pet's health and well-being.</p>
+            <span class="price">$999</span>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <!-- Product: Subscription Plan -->
+        <div class="product-card" data-product="Subscription Plan" data-price="19.99">
+            <img src="./images/Picture2.png" alt="Robot Subscription Plan" height="220px">
+            <h2>Subscription Plan</h2>
+            <p>Get additional features like advanced analytics, priority support, and new updates.</p>
+            <span class="price">$19.99/month</span>
+            <button class="buy-btn">Subscribe Now</button>
+        </div>
+
+        <!-- Product: Pet Training Sessions -->
+        <div class="product-card" data-product="Pet Training Sessions" data-price="299">
+            <img src="./images/train.png" alt="Pet Training Sessions" height="220px">
+            <h2>Pet Training Sessions</h2>
+            <p>Professional pet training sessions with our certified trainers.</p>
+            <span class="price">$299</span>
+            <button class="buy-btn">Book Now</button>
+        </div>
+
+        <!-- Product: Pet Wellness Checkups -->
+        <div class="product-card" data-product="Pet Wellness Checkups" data-price="49.99">
+            <img src="./images/veterinarian_2.jpg" alt="Pet Wellness Checkups">
+            <h2>Pet Wellness Checkups</h2>
+            <p>Regular health checkups for your pet by certified veterinarians.</p>
+            <span class="price">$49.99</span>
+            <button class="buy-btn">Schedule Checkup</button>
+        </div>
+
+        <!-- Product: Custom Robot Accessories -->
+        <div class="product-card" data-product="Custom Accessories" data-price="39.99">
+           
+            <h2>Custom Robot Accessories</h2>
+            <p>Personalize your pet robot with custom attachments.</p>
+            <span class="price">$39.99</span>
+            <button class="buy-btn">Shop Now</button>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total">
+                <h3>Total: $<span id="total-amount">0.00</span></h3>
+            </div>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="product.js"></script>
+</body>
+</html>

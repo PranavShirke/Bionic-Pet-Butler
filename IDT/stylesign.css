@@ -1,0 +1,98 @@
+body{
+    background-image: url(./images/Sign-upbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:'kumbh sans' 
+
+   
+}
+.form-box{
+    width:90%;
+    max-width:500px;
+   position:absolute;
+   background-color: aliceblue;
+   text-align: center;
+   padding-bottom: 40px;
+   margin-left: 400px;
+   margin-top: 100px;
+   border-radius: 6px;
+   
+}
+
+.form-box h1{
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: #3c00a0;
+  position:relative;
+}
+
+.form-box h1::after{
+    content:'';
+    width:30px;
+    height:4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position:absolute;
+    bottom:-12px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.input-field{
+   
+    width:300px;
+    background: #eadada;
+    margin:15px 100px;
+    border-radius: 3px;
+    display:flex;
+    align-items: center;
+}
+
+input{
+    width:90%;
+    background: transparent;
+    border:0;
+    outline:0;
+    padding:18px 15px;
+}
+
+.input-field i{
+    margin-left:5px;
+    color: black;
+}
+
+form p{
+    text-align: center;
+    font-size: 15px;
+}
+
+form p a{
+    text-decoration: none;
+}
+
+.btn-field{
+    width:100%;
+    display: flex;
+   justify-content: center;
+   column-gap: 15px;
+}
+
+.btn-field button{
+    flex-basis:28%;
+    background: #3c00a0;
+    color:#fff;
+    height: 30px;
+    border-radius: 20px;
+    border:0;
+    outline:0;
+    cursor:pointer;
+    transition:  1s;
+}
+
+.btn-field button.disable{
+    background: #eaeaea;
+    
+    
+
+}

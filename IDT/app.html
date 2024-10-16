@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Robot Dashboard</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pet Robot Dashboard</h1>
+
+        <!-- Pet Actions -->
+        <div class="pet-actions">
+            <h2>Pet Actions</h2>
+            <button id="feedPet">Feed the Pet</button>
+            <button id="waterAlert">Water Drinking Alert</button>
+            <button id="cleanPoop">Clean Poop</button>
+        </div>
+
+        <!-- Live Camera Feed -->
+        <div class="live-camera">
+            <h2>Live Camera Feed</h2>
+            <div class="camera">
+                <iframe src="https://www.example.com/live-feed" title="Live Camera Feed"></iframe>
+            </div>
+        </div>
+
+        <!-- Pet Health Info -->
+        <div class="health-info">
+            <h2>Health Information</h2>
+            <div id="healthData">
+                <p>Weight: <span id="weight">15</span> kg</p>
+                <p>Temperature: <span id="petTemperature">38.5</span> °C</p>
+                <p>Heart Rate: <span id="heartRate">90</span> bpm</p>
+            </div>
+        </div>
+
+        <!-- Emergency Doctor Assistance -->
+        <div class="emergency-assistance">
+            <h2>Emergency Doctor Assistance</h2>
+            <button id="emergencyButton">Contact Doctor</button>
+        </div>
+
+        <!-- Timer -->
+        <div class="timer-section">
+            <h2>Set Timer for Pet Activities</h2>
+            <input type="time" id="timerInput">
+            <button id="setTimer">Set Timer</button>
+        </div>
+
+        <!-- GPS Tracking -->
+        <div class="gps-tracking">
+            <h2>GPS Tracking</h2>
+            <div id="gpsData">
+                <p>Current Location: <span id="gpsLocation">Fetching location...</span></p>
+                <button id="trackPet">Track Pet Location</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="applica.js"></script>
+</body>
+</html>

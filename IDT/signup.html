@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>signin</title>
+        <link rel="stylesheet" href="./stylesign.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/11d2977eba.js" crossorigin="anonymous"></script>
+        <style>
+           
+        </style>
+    </head>
+    <body>
+        <div class="container">
+<div class="form-box">
+    <h1 id="title">Sign Up</h1>
+    <form>
+        <div class="input-group" id="namefield">
+            <div class="input-field">
+               <i class="fa-solid fa-user"></i>
+               <input type="text" placeholder="Name">
+
+            </div>
+            <div class="input-field">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email">
+ 
+             </div>
+             <div class="input-field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password">
+ 
+             </div>
+             <p>Lost Password <a href="#">Click Here!!!</a></p>
+        </div>
+        <div class="btn-field">
+            <button type="button" id="signupBtn">Sign up</button>
+            <button type="button" id="signinBtn" class="disable">Sign in</button>
+        </div>
+    </form>
+   
+</div>
+        </div>
+        <script>
+            let signupBtn = document.getElementById("signupBtn");
+            let signinBtn = document.getElementById("signinBtn");
+            let namefield = document.getElementById("namefield");
+            let title = document.getElementById("title");
+
+        </script>
+    </body>
+</html>
